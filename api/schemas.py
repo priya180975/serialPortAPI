@@ -7,11 +7,12 @@ class Users(BaseModel):
     email:str
     password:str
 
-class DisplayUser(BaseModel):
-    username:str
-    email:str
-    class Config:
-        from_attributes=True
+# class DisplayUser(BaseModel):
+#     username:str
+#     email:str
+#     class Config:
+#         extra='allow'
+#         from_attributes=True
 
 # class updateUser(BaseModel):
 #     password:str
