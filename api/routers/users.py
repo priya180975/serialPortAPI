@@ -29,7 +29,7 @@ def create_user(request:schemas.Users,db:Session=Depends(get_db)):
 
 
 #get 
-@router.get('',response_model=List[schemas.DisplayUser])
+@router.get('',response_model=List[schemas.Users])
 def get_users(db:Session=Depends(get_db)):
     users=db.query(models.Users).all()
     return users
