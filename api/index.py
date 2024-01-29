@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-import models #database structure
-from database import engine #db configuration
+from .import models #database structure
+from .database import engine #db configuration
 # from routers import users,login,weightdata
 
 app=FastAPI()
