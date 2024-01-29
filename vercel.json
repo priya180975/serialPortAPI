@@ -10,6 +10,10 @@
         {
             "src":"/(.*)",
             "dest":"api/index.py"
+        },
+        {
+            "src":"/users",
+            "dest":"api/index.py"
         }
     ]
 }
