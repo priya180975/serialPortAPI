@@ -10,8 +10,8 @@ class Users(BaseModel):
 class DisplayUser(BaseModel):
     username:str
     email:str
-    # class Config:
-    #     orm_mode=True
+    class Config:
+        from_attributes=True
 
 # class updateUser(BaseModel):
 #     password:str
