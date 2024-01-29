@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-# import models #database structure
+import models #database structure
 # from database import engine #db configuration
 # from routers import users,login,weightdata
 
@@ -12,6 +12,10 @@ app=FastAPI()
 @app.get('/')
 def main_page():
     return 'Hi'
+
+@app.get('/newpath')
+def new_path():
+    return {'Data':['1','2'],'New':'Priya'}
 
 #convert models to db table
 # models.Base.metadata.create_all(engine)
